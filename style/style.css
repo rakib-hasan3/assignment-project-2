@@ -1,6 +1,6 @@
   
  .quicksand-text{
-   font-family: "Quicksand",serif ;
+   font-family: Quicksand,serif ;
    font-optical-sizing: auto;
     
    font-style: normal;
@@ -12,6 +12,18 @@
   
      
      
+}
+@media (max-width:576px) {
+  body{
+    /* align-items: center; */
+    
+  }
+  .main-container{
+    padding-left: -20px;
+  }
+  .footer-container{
+    margin-left: -10px;
+  }
 }
 body{
   background-color: rgb(247, 247, 247);
@@ -465,8 +477,8 @@ font-size: 1rem;
     background-color: rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3);
    }         
    .story-card{
-   
-    width: 1020px;
+   padding-bottom: 140px;
+    width: 1022px;
     margin-left: 190px;
      }
      .card-start{
@@ -486,13 +498,14 @@ font-size: 1rem;
 
      }
      .s-card-1{
-      width: 540.27px;
+      width: 500px;
       height: 630.52px;
       background-color:rgb(255, 255, 255);
       border-radius: 16px;
       
      }
      .s-card-1 img{
+      width: 500px;
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
      }
@@ -534,11 +547,21 @@ font-size: 1rem;
       display: flex;
       grid-column: 2;
      }
+     .main-card p{
+      margin-left: 20px;
+      font-family: Quicksand;
+     
+      font-size: 15.34px;
+      font-weight: 700;
+      line-height: 28.76px;
+      margin-top: 40px;
+       
+     }
      .s-card-2, .s-card-3, .s-card-4, .s-card-5{
-      width: 220px;
+      width: 240.2px;
       height: 305px;
       border-radius: 16px;
-      margin-left: 20px;
+      margin-left: 19px;
       background: rgb(255, 255, 255);
      }
      .main-card button{
@@ -559,7 +582,7 @@ font-size: 1rem;
         background-color:  blue;
      }
       .main-card img{
-      width:220px ;
+      width:240.2px ;
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
       
@@ -567,6 +590,90 @@ font-size: 1rem;
      .s-card-2, .s-card-4{
       margin-bottom: 20px;
      }
+     .story-btn {
+      text-align: center;
+      margin-top: 100px;
+       
+     }
+     .story-btn button{
+      background-color:  black;
+color: rgb(255, 255, 255);
+border: none;
+/* padding: 10px 20px; */
+width: 12.3rem;
+height: 3.12rem;
+border-radius: 12px;
+cursor: pointer;
+font-size: 1rem;
+     }
+
+     @media  (max-width:576px) {
+       .stories{
+        width: 358px;
+        margin-left: 77px;
+        margin-top: -40px;
+        margin-bottom: -80px;
+         
+       }
+       .card-start{
+         margin-top: -80px;
+        margin-bottom: -80;
+       
+       }
+       .story-btn{
+        margin-top: -60px;
+       }
+       .s-card-1{
+        display: none;
+       }
+       .story-card   {
+        width: 358px;
+         margin: 0;
+         text-align: center;
+         
+
+         
+       }
+       .story-card{
+        padding-top: -10px;
+       }
+       .main-card{
+         margin-top: 0;
+        /* width:50%; */
+        display: flex;
+        /* margin-left: -196px; */
+        align-items: center;
+       
+       }
+       .s-card-2, .s-card-3, .s-card-4, .s-card-5{
+        width:  155px;
+        height: 180px;
+       }
+       .main-card img{
+        width:  155px;
+        height: 110px;
+       }
+       .main-card button{
+        width: 95px;
+        height: 26px;
+        margin-left: -19px;
+       }
+       .main-card p{
+        font-size: 12px;
+        line-break: unset;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        width:140px;
+        margin-left: 10px;
+        
+        height: 5px;
+        line-height: 15px;
+        padding-top: 15px;
+         
+       }
+     }
+      
   /* foot */
   .footer {
     background-color: #008cff;
@@ -574,10 +681,11 @@ font-size: 1rem;
     display: flex;
     justify-content: center;
     width: 1440px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     height: 500px;
      color: aliceblue;
      align-items: center;
+
      
   }
   .footer-container {
@@ -602,6 +710,13 @@ font-size: 1rem;
     margin: 10px 0;
     
   }
+  .footer-section h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 30px;
+     
+  }
   
   .footer-section p {
     font-size: 14px;
@@ -611,11 +726,11 @@ font-size: 1rem;
   
   .footer-section ul {
     list-style: none;
-    padding: 0;
+     
   }
   
   .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 27px;
   }
   
   .footer-section ul li a {
@@ -646,13 +761,19 @@ font-size: 1rem;
   }
   .edu-img-flx h2{
     padding-left: 10px;
+    font-size: 42.14px;
+font-weight: 700;
+line-height: 39.51px;
+padding-bottom: 30px;
+
   }
   .logo {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 82px;
      padding-left: ;
      margin-left: -7px;
      color: #fff;
+     margin-top: -30px;
     
   }
   @media  (max-width:576px){
@@ -661,10 +782,11 @@ font-size: 1rem;
        
         /* margin-left:  -50px; */
         /* display: flex; */
-        margin: auto;
+        margin:0 ;
         padding: 0;
         max-width: 358px;
         margin-left:77px;
+        height: 720px;
        
      
     } 
@@ -687,6 +809,11 @@ font-size: 1rem;
     .logo{
       width: 70px;
       height: 70px;
+    }
+    .edu-img-flx h2{
+      font-size: 33px;
+      font-weight: 700;
+      line-height: 33.5px;
     }
      
   }
